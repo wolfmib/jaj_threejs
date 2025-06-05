@@ -1,0 +1,10 @@
+{
+  "name": "JAJ Three.js + Vite",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "threejs-app",
+  "workspaceFolder": "/app",
+  "extensions": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"],
+  "runArgs": ["--platform=linux/amd64"],
+
+}
+
