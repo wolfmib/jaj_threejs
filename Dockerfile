@@ -1,21 +1,21 @@
-#Dockerfile
-#issue:FROM node:20-alpine
-#FROM --platform=linux/amd64 node:20-slim
-FROM node:20-slim
+FROM python:3.10-slim
 
+# Set working directory
 WORKDIR /app
 
-COPY package*.json ./
-#ENV NODE_ENV=development
-#RUN npm ci || npm install && npm install vite -D
+# Install ffmpeg (for audio conversion if needed)
+RUN apt-get update && \
+    apt-get install -y ffmpeg && \
+    apt-get clean
+
+# Copy requirements and install
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy your Python app and data
+#COPY . .
 
 
-# ✅ no optional crap, and Vite 5 just works
-RUN npm install --include=dev --omit=optional
-
-COPY . .
-
-EXPOSE 5173
-
-CMD ["npm", "run", "dev", "--", "--host"]
+# Default command (replace with your actual script if different)
+CMD ["python", "python_openai_tts_hello.py"]
 

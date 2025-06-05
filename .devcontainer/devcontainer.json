@@ -1,10 +1,23 @@
 {
-  "name": "JAJ Three.js + Vite",
-  "dockerComposeFile": "../docker-compose.yml",
-  "service": "threejs-app",
+  "name": "OpenAI Voice Dev",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [
+    "ms-python.python"
+  ],
+  "postCreateCommand": "pip install -r requirements.txt",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/app,type=bind"
+  ],
   "workspaceFolder": "/app",
-  "extensions": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"],
-  "runArgs": ["--platform=linux/amd64"],
-
+  "remoteUser": "root"
 }
+
+
+
+
 
