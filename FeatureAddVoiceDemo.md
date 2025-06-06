@@ -16,5 +16,8 @@ docker run -it --rm \
   bash
 
 
+## run python
+python3 python_opanai_tts_hello.py
+
 ## use vscode to easy coding
 

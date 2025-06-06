@@ -1,0 +1,1 @@
+docker build -t ja_openai_voice . --no-cache

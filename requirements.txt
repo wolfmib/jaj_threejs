@@ -1,3 +1,5 @@
 openai>=1.0.0
 pydub
 python-dotenv
+imageio[ffmpeg]==2.31.1         # Safe version known to work with MoviePy
+moviepy==2.0.0                  # Stable, includes 'editor' module

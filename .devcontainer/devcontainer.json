@@ -9,7 +9,8 @@
   "extensions": [
     "ms-python.python"
   ],
-  "postCreateCommand": "pip install -r requirements.txt",
+  "postCreateCommand": "pip install --force-reinstall --no-cache-dir -r requirements.txt",
+
   "mounts": [
     "source=${localWorkspaceFolder},target=/app,type=bind"
   ],
