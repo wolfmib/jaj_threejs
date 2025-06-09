@@ -1,0 +1,5 @@
+📂 repo-root/
+├── main (branch)
+│   └── [latest code from origin]
+└── [create new branch] ➜ feature/myFeature
+
