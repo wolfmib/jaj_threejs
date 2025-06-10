@@ -1,0 +1,6 @@
+📂 ec2:/home/ec2-user/your-app/
+├── dist/        ← 🆕 Updated static files
+│   ├── index.html
+│   ├── app.js
+│   └── favicon.ico
+

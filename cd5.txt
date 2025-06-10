@@ -1,0 +1,5 @@
+🖥️  Browser:
+├── Before ➜ Old footer/banner
+├── 🔄 Refresh
+└── After  ➜ ✅ New content deployed
+

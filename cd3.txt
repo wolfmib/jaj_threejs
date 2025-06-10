@@ -1,0 +1,7 @@
+📂 GitHub/
+├── Actions tab
+│   └── ✅ Deploy Vue Frontend to EC2
+│       ├── Checkout Code
+│       ├── SSH Connect to EC2
+│       └── npm run build (Success ✅)
+
