@@ -1,3 +1,10 @@
+## jun-13-2025, start to do youtube 
+try:
+npm install react-youtube
+
+
+
+
 ## install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 
