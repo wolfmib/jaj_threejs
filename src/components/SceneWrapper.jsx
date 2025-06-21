@@ -3,7 +3,12 @@ import { Environment, PointerLockControls } from '@react-three/drei'
 import { Physics, useBox } from '@react-three/cannon'
 import AgentBird from './AgentBird'
 import PlayerController from './PlayerController'
+
 import { Floor } from './Floor'  // adjust path if needed
+import TVScreen from './TVScreen'
+import FloatingTextSpawner from './FloatingTextSpawner' // jun-2025
+
+import { useOverlayStore } from '../store'
 
 function TestBox() {
   const [ref] = useBox(() => ({
@@ -20,6 +25,8 @@ function TestBox() {
 }
 
 export default function SceneWrapper() {
+
+  const showTV = useOverlayStore((s) => s.showTV)
   return (
     <>
       <Environment preset="lobby" background />
@@ -37,20 +44,35 @@ export default function SceneWrapper() {
       <Environment preset="city" />
 
       
-      <Physics gravity={[0, -9.81, 0]}>
+        <Physics key="physics-reset" gravity={[0, -9.81, 0]}>
 
-        {/* Floor */}
+
         <Floor />
 
-        {/* Box to test collision */}
-        <TestBox />
-
-        {/* Bird (optional) */}
+      
+      
+  
         <AgentBird position={[0, 1, -5]} />
 
-        {/* Player */}
         <PlayerController />
-      </Physics>
+
+
+
+        
+          {/* <TVScreen position={[2, 1, -5]} />  ✅ moved to the right and slightly back */}
+          <TVScreen position={[4, 1.2, -6]} />  
+  
+
+  
+      </Physics> 
+
+      <FloatingTextSpawner />
+       
+      
+
+ 
+        
+   
     </>
   )
 }

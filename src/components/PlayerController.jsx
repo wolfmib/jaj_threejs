@@ -3,9 +3,12 @@ import { useRef, useEffect } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
 import { useSphere } from '@react-three/cannon'
 import * as THREE from 'three'
+// import { useOverlayStore } from '../store'
+
 
 export default function PlayerController() {
   const { camera } = useThree()
+  
   const [ref, api] = useSphere(() => ({
     mass: 1,
     position: [0, 1, 0],
@@ -47,6 +50,13 @@ export default function PlayerController() {
     const unsubscribe = api.velocity.subscribe((v) => (velocity.current = v))
     return () => unsubscribe()
   }, [api.velocity])
+
+
+  // ✅ Expose API to Zustand store so we can track position elsewhere
+  //const setPlayerAPI = useOverlayStore((s) => s.setPlayerAPI)
+  //useEffect(() => {
+  //  setPlayerAPI(api)
+  //}, [])
 
   return (
     <mesh ref={ref} visible={false}>

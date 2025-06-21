@@ -18,7 +18,8 @@ export default function AgentBird(props) {
   //})
 
   return (
-    <group ref={ref}>
+   
+    <group ref={ref} >
       <mesh position={[0, 0, 0]}>
         <coneGeometry args={[0.2, 0.5, 32]} />
         <meshStandardMaterial color="orange" />
@@ -28,5 +29,6 @@ export default function AgentBird(props) {
         <meshStandardMaterial color="black" />
       </mesh>
     </group>
+
   )
 }
