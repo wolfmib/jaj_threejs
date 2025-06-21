@@ -5,11 +5,14 @@ import SceneWrapper from './components/SceneWrapper'
 import FloatingHUD from './components/FloatingHUD'
 import { useEffect } from 'react'
 import { useOverlayStore } from './store'
+//import PositionTracker from './components/PositionTracker'
+
 
 export default function App() {
   const setStep = useOverlayStore((s) => s.setStep)
   const showTV = useOverlayStore((s) => s.showTV)
 
+  
   console.log("✅ showTV exists?", typeof showTV) // Check type
 
   useEffect(() => {
@@ -39,6 +42,7 @@ export default function App() {
     >
       <SceneWrapper />
     </Canvas>
+  
     </>
   )
 }

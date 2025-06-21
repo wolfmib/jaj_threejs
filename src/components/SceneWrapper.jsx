@@ -6,6 +6,7 @@ import PlayerController from './PlayerController'
 
 import { Floor } from './Floor'  // adjust path if needed
 import TVScreen from './TVScreen'
+import FloatingTextSpawner from './FloatingTextSpawner' // jun-2025
 
 import { useOverlayStore } from '../store'
 
@@ -64,6 +65,8 @@ export default function SceneWrapper() {
 
   
       </Physics> 
+
+      <FloatingTextSpawner />
        
       
 

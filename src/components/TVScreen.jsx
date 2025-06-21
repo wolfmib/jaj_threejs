@@ -38,7 +38,8 @@ export default function TVScreen({ position = [0, 1, -3] }) {
             width="640"
             height="360"
             //src="https://www.youtube.com/embed/CJ0djllyqwY?autoplay=1?rel=0&modestbranding=1" TARA
-            src="https://www.youtube.com/embed/vx2u5uUu3DE?autoplay=1?rel=0&modestbranding=1" 
+            //src="https://www.youtube.com/embed/vx2u5uUu3DE?autoplay=1?rel=0&modestbranding=1"  Its my life
+            src="https://www.youtube.com/embed/6VzM7CE3VoE?autoplay=1?rel=0&modestbranding=1" //creazy live
             title="YouTube video"
             allow="autoplay; fullscreen"
             frameBorder="0"
