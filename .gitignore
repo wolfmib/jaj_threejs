@@ -1,4 +1,7 @@
 
+#black laptop
+env_openai
+
 .DS_Store
 temp
 node_modules
