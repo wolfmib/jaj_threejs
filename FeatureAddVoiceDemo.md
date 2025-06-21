@@ -18,7 +18,7 @@ docker run -it --rm \
 
 
 ## run python
-python3 python_opanai_tts_hello.py
+python3 python_openai_tts_hello.py
 
 ## use vscode to easy coding
 
