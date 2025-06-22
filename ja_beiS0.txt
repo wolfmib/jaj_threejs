@@ -1,0 +1,39 @@
+File Strucutre
+.
+├── python_9527_terminal_server.py     
+  # ✅ Server: executes terminal commands
+                             via WebSocket
+
+├── test_client__python_terminal_server.py 
+    # ✅ Client: sends test commands like 'ls -l'
+
+├── node_modules/
+├── temp/
+
+
+
+########🧩 Files we use in the demo: ###########
+
+
+#### python_9527_terminal_server.py ####
+
+Feature: Runs Flask + SocketIO server
+
+Executes terminal commands via subprocess
+
+Emits command output back to client
+
+---------------------------------------
+
+
+
+
+#### test_client__python_terminal_server.py ####
+
+Feature: Simple socketio.Client
+
+Sends ls -l, pwd, etc.
+
+Prints results & disconnects
+
+----------------------------------

@@ -1,0 +1,25 @@
+🎯 Goal: 
+Inject terminal  into Three.js Matrix world
+
+
+✅ Terminal input:
+
+ - User types `ls`, `cd`, etc. via floating UI pad
+
+
+✅ Terminal output:
+ - Server executes command and streams output to scene
+
+🧠 Object: 
+`JAJ_Bei` (JAJ = Javis, Bei = “Pad” in Chinese)
+
+   - Acts as an interactive shell object
+   - Output support scroll, word wrap, fade-in lines
+
+📦 Powered by:
+   - Flask-SocketIO (backend)
+   - WebSocket stream to Three.js (frontend)
+
+
+LOL
+
