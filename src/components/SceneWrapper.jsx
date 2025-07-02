@@ -7,6 +7,10 @@ import PlayerController from './PlayerController'
 import { Floor } from './Floor'  // adjust path if needed
 import TVScreen from './TVScreen'
 import FloatingTextSpawner from './FloatingTextSpawner' // jun-2025
+import WorldDirectionTags from './WorldDirectionTags'  //july-2025 
+
+
+
 
 import { useOverlayStore } from '../store'
 
@@ -56,7 +60,8 @@ export default function SceneWrapper() {
 
         <PlayerController />
 
-
+          {/* july-020-2025 , used to added the sign  x, y, z !!! */}
+        <WorldDirectionTags />
 
         
           {/* <TVScreen position={[2, 1, -5]} />  ✅ moved to the right and slightly back */}

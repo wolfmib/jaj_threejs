@@ -3,13 +3,11 @@
 │   └── 📂 .github/
 │       └── 📂 workflows/
 │           └── 📝 deploy.yml  ← CI/CD workflow
-│               ├─ on: push → main   🔁 trigger
-
-│               ├─ secrets.AWS_JA_WEB_01_SSH_KEY 
-                      🔐 secure EC2 login
-
-│               └─ <<'EOF' ... 
-                      npm run build 🏗️ 
-                      remote build on EC2
-
-
+│               
+├─ 1. on: push → main   🔁 trigger
+├─ 2. secrets.AWS_JA_WEB_01_SSH_KEY 
+        (🔐 secure EC2 login)
+   3.  <<'EOF' ... 
+         🏗️ remote access EC2 
+         npm run build
+        
