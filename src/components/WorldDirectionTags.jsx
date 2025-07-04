@@ -12,7 +12,7 @@ export default function WorldDirectionTags() {
 
       {/* X Axis */}
       <Text position={[10, 0.2, 0]} fontSize={0.4} color="orange">
-        +X →
+        +X → (10,0,0)
       </Text>
 
       {/* Y Axis - floating ball */}
@@ -21,12 +21,12 @@ export default function WorldDirectionTags() {
         <meshStandardMaterial color="lime" />
       </mesh>
       <Text position={[0.5, 10, 0]} fontSize={0.4} color="lime">
-        ↑ Y
+        ↑ Y (0,10,0)
       </Text>
 
       {/* Z Axis */}
       <Text position={[0, 0.2, -10]} fontSize={0.4} color="skyblue">
-        Z →
+        -Z(0,0,-10) 
       </Text>
     </>
   )

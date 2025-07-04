@@ -3,8 +3,23 @@ import { useOverlayStore } from '../store'
 
 
 
+//july-04-2025 added coordinated demo used sub titles.
+//     Perfect — here's a cleaner and shorter version tailored for your "Coordinate System Demo" (30–45 sec video), 
+//     with subtitles that feel natural, fit your theme, and work without narration.
 
 
+const steps = [
+  "🧭 Weltome to Matrix-three-js, lets setting up direction anchors ...first see my little bird :)",
+  "📍 Red tag marks the origin (0, 0, 0).",
+  "➡️ Orange tag points to the +X axis.",
+  "🟢 Floating ball marks +Y — vertical awareness.",
+  "🔵 Blue tag marks the +Z axis — depth direction."
+]
+
+
+
+// jun -2025 demo used
+/*
 const steps = [
   "👋 Welcome to our world — powered by Three.js + React Three Fiber.",
   "📜 As we move forward, sentence pairs float into view — English 🇬🇧 and French 🇫🇷 — gently gliding from afar.",
@@ -12,6 +27,7 @@ const steps = [
   "🎯 Next Plan 1: Type the correct translation, cancel the wrong one — make learning interactive!",
   "📺 Next Plan 2: Add more language and scoring,progress and YouTube TV for a gamified learning experience!"
 ]
+*/
 
 
 

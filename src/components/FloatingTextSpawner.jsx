@@ -4,8 +4,8 @@ import { useFrame } from '@react-three/fiber'
 import { Html } from '@react-three/drei'
 
 const contextData = [
-  { en: "I like you", fr: "Je t'aime" },
-  { en: "I wanna sleep", fr: "Je veux dormir" },
+  { en: "How are you", fr: "Comment ca va?" },
+  { en: "I wana sleep", fr: "Je veux dormir" },
   { en: "My wife is Alin", fr: "Ma femme est Alin" }
 ]
 
