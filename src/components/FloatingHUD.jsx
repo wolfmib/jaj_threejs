@@ -2,12 +2,27 @@ import { useOverlayStore } from '../store'
 
 
 
+// July-08-2025 
+const steps = [
+  "🟩 SPLUNK — powerful for log analysis, search, and deep operational insight.",
+  "📊 GRAFANA — real-time dashboards and data visualizations, open and flexible.",
+  "🤖 DYNATRACE — AI-powered monitoring for performance, tracing, and automation.",
+  // you'll give me next lines...
+  // you'll give me next lines...
+]
+
+
+
+
+
+
+
 
 //july-04-2025 added coordinated demo used sub titles.
 //     Perfect — here's a cleaner and shorter version tailored for your "Coordinate System Demo" (30–45 sec video), 
 //     with subtitles that feel natural, fit your theme, and work without narration.
 
-
+/*
 const steps = [
   "🧭 Weltome to Matrix-three-js, lets setting up direction anchors ...first see my little bird :)",
   "📍 Red tag marks the origin (0, 0, 0).",
@@ -15,6 +30,7 @@ const steps = [
   "🟢 Floating ball marks +Y — vertical awareness.",
   "🔵 Blue tag marks the +Z axis — depth direction."
 ]
+*/
 
 
 

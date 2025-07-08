@@ -11,6 +11,7 @@ import { useOverlayStore } from './store'
 export default function App() {
   const setStep = useOverlayStore((s) => s.setStep)
   const showTV = useOverlayStore((s) => s.showTV)
+  const triggerLogos = useOverlayStore((s) => s.triggerLogos)
 
   
   console.log("✅ showTV exists?", typeof showTV) // Check type
@@ -26,11 +27,16 @@ export default function App() {
         console.log(e.key)
         showTV()
       }
+
+      if ((e.metaKey || e.ctrlKey) && e.key === '0') {
+        console.log('🎯 Ctrl+0 → Trigger Logos')
+        triggerLogos()
+      }
     }
 
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [setStep, showTV])
+  }, [setStep, showTV,triggerLogos])
 
   return (
     <>

@@ -9,6 +9,8 @@ import TVScreen from './TVScreen'
 import FloatingTextSpawner from './FloatingTextSpawner' // jun-2025
 import WorldDirectionTags from './WorldDirectionTags'  //july-2025 
 
+import TVScreenWithLabel from './TVScreenWithLabel' // july-08-2025 short video 
+import DroppingLogo from './DroppingLogo' // july-08-2025 short video 
 
 
 
@@ -31,6 +33,7 @@ function TestBox() {
 export default function SceneWrapper() {
 
   const showTV = useOverlayStore((s) => s.showTV)
+  const showLogos = useOverlayStore((s) => s.showLogos)
   return (
     <>
       <Environment preset="lobby" background />
@@ -67,6 +70,41 @@ export default function SceneWrapper() {
           {/* <TVScreen position={[2, 1, -5]} />  ✅ moved to the right and slightly back */}
           <TVScreen position={[4, 1.2, -6]} />  
   
+
+
+
+           
+          {/* July 08 2025, i miss my wife, three splunk/grafna/dynatrace video */}
+          
+          <TVScreenWithLabel
+            position={[15, 2, 0]}
+            label="Splunk"
+            videoUrl="https://www.youtube.com/embed/3CiRs6WaWaU"
+            //https://www.youtube.com/watch?v=3CiRs6WaWaU
+            // splunk 
+          />
+          <TVScreenWithLabel
+            position={[15, 2, 5]}
+            label="Grafana"
+            videoUrl="https://www.youtube.com/embed/lILY8eSspEo"
+            // https://www.youtube.com/watch?v=lILY8eSspEo
+          />
+          <TVScreenWithLabel
+            position={[15, 2, 10]}
+            label="Dynatrace"
+            videoUrl="https://www.youtube.com/embed/2zcMeMC4ibQ"
+            // https://www.youtube.com/watch?v=2zcMeMC4ibQ
+          />
+
+          {/* Logos near TVs */}
+          {showLogos && (
+            <>
+              <DroppingLogo position={[13, 2, 0]} image="/images/logo1.png" trigger={showLogos} />
+              <DroppingLogo position={[13, 2, 5]} image="/images/logo2.png" trigger={showLogos} />
+              <DroppingLogo position={[13, 2, 10]} image="/images/logo3.png" trigger={showLogos} />
+            </>
+          )}
+
 
   
       </Physics> 
