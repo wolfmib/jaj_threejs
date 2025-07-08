@@ -2,7 +2,8 @@
 #black laptop
 env_openai
 
-asset
+#asset
+public
 
 .DS_Store
 temp
