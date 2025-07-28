@@ -5,6 +5,9 @@ env_openai
 #asset
 public
 
+#
+
+
 .DS_Store
 temp
 node_modules
