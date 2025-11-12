@@ -1,6 +1,12 @@
 
 ## demo note
+ #mac mini
  563 × 1000 px → perfect 9:16 for vertical short-form video.
+ # terminal mapping
+ 75 X 69
+
+
+
  500 × 889 px
  450 × 800 px (maintains 9:16 ratio)
 
